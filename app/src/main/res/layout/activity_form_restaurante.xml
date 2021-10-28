@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:background="#CA4343"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/idBackMain"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="15dp"
+                android:tint="#F6F1F1"
+                app:srcCompat="@drawable/abc_vector_test" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="6"
+                android:lineSpacingExtra="24sp"
+                android:padding="15dp"
+                android:text="Restaurante App"
+                android:textColor="#FFFFFF"
+                android:textSize="22sp" />
+
+            <ImageView
+                android:id="@+id/idLogation"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="15dp"
+                app:srcCompat="@drawable/ic_baseline_add_location_alt_24" />
+
+            <ImageView
+                android:id="@+id/idSaveRest"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:contentDescription="Abre aba para cadastro dos restaurantes"
+                android:padding="15dp"
+                android:tint="#FDFDFD"
+                app:srcCompat="@drawable/ic_baseline_done_24" />
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/txtRestauranteNome"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="#F1EEEE"
+                    android:ems="10"
+                    android:hint="Primeiro Nome"
+                    android:inputType="textPersonName"
+                    android:padding="10dp"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/txtRestauranteApelido"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="#F1EEEE"
+                    android:ems="10"
+                    android:hint="Apelido"
+                    android:inputType="textPersonName"
+                    android:padding="10dp"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/txtNomeRestaurante"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="#F1EEEE"
+                    android:ems="10"
+                    android:hint="Nome Restaurante"
+                    android:inputType="textPersonName"
+                    android:padding="10dp"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/txtRestauranteEstrelas"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="#F1EEEE"
+                    android:ems="10"
+                    android:hint="Numero de Estrelas"
+                    android:inputType="number|textPersonName"
+                    android:padding="10dp"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/txtRestauranteCidade"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="#F1EEEE"
+                    android:ems="10"
+                    android:hint="Cidade"
+                    android:inputType="textPersonName"
+                    android:padding="10dp"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/txtRestauranteCordenadaX"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="#F1EEEE"
+                    android:ems="10"
+                    android:hint="Longitude"
+                    android:inputType="textPersonName"
+                    android:padding="10dp"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/txtRestauranteCordenadaY"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="#F1EEEE"
+                    android:ems="10"
+                    android:hint="Latitude"
+                    android:inputType="textPersonName"
+                    android:padding="10dp"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/txtRestauranteEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="#F1EEEE"
+                    android:ems="10"
+                    android:hint="Email"
+                    android:inputType="textPersonName"
+                    android:padding="10dp"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/txtRestauranteSenha"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="35dp"
+                    android:background="#F1EEEE"
+                    android:ems="10"
+                    android:hint="Senha"
+                    android:inputType="textPersonName|text|textPassword"
+                    android:lineSpacingExtra="8sp"
+                    android:padding="10dp"
+                    android:selectAllOnFocus="false"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textSize="20sp"
+                    android:visibility="visible" />
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
